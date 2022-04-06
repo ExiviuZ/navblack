@@ -103,7 +103,7 @@ opacity: 1;
         overflow-x: hidden;
     }
     .links{
-        position: absolute;
+        position: fixed;
         flex-direction: column;
         top: 0;
         right: 0;
