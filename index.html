@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <span class="brand">Gamify</span>
+        <div class="burger menu">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <ul class="links">
+          <div class="closer menu">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <li class="link-item"><a href="" class="link">Product</a></li>
+          <li class="link-item"><a href="" class="link">Contact</a></li>
+          <li class="link-item"><a href="" class="link">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="banner">
+      <h1>Shoot and Reach for the Skies!</h1>
+      <small
+        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo
+        animi, quae amet saepe ab est itaque facilis perferendis nihil corporis
+        quaerat. Ipsam velit tempore dolorem hic, voluptatum quibusdam.
+        Molestias dolor eum ut inventore! Pariatur vel unde corporis iusto
+        nesciunt culpa molestias eveniet repellendus, minus iste fugit obcaecati
+        neque illum.</small
+      >
+    </div>
+    <script>
+      let menus = document.querySelectorAll(".menu");
+      let links = document.querySelector(".links");
+      menus.forEach((menu) => {
+        menu.addEventListener("click", (e) => {
+          links.classList.toggle("toggle-menu");
+        });
+      });
+    </script>
+  </body>
+</html>
